@@ -1,0 +1,42 @@
+# Core blog + bot config
+site:
+  title: "Macro Mentor — Smart Nutrition & Training"
+  description: "Evidence-based fitness, macros, and 1-hour workouts for busy students."
+  baseurl: "" # leave blank for user/organization GitHub Pages
+  url: ""     # set your custom domain if you use one
+
+niche:
+  # Pick one clear topic and stay focused.
+  topic: "fitness macros for college students"
+  audience: "busy students who lift and need easy meals"
+  voice: "friendly, evidence-based, concise, actionable"
+  affiliate_disclaimer: "As an affiliate, I may earn from qualifying purchases at no extra cost to you."
+
+monetization:
+  amazon_tag: "yourtag-20"
+  primary_cta_text: "Get the 7‑Day Macro Meal Plan (Free)"
+  primary_cta_url: "https://example.com/lead-magnet"
+  products:
+    - name: "Food Scale"
+      url: "https://www.amazon.com/dp/B08XXXXXX/?tag={{amazon_tag}}"
+    - name: "Whey Protein"
+      url: "https://www.amazon.com/dp/B07XXXXXX/?tag={{amazon_tag}}"
+    - name: "Meal Prep Containers"
+      url: "https://www.amazon.com/dp/B01XXXXXX/?tag={{amazon_tag}}"
+
+posting:
+  posts_per_run: 1
+  min_days_between_same_keyword: 60
+
+llm:
+  provider: "openai"        # or "oai_compatible"
+  model: "gpt-4o-mini"      # set your preferred model
+  max_tokens: 1800
+  temperature: 0.4
+
+seo:
+  # Basic frontmatter knobs
+  canonical_base: ""
+  author: "Macro Mentor"
+  tags: ["macros", "meal prep", "workouts", "college", "nutrition"]
+

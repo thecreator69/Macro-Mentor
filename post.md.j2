@@ -1,0 +1,25 @@
+---
+layout: post
+title: "{{ title }}"
+date: {{ date }}
+categories: {{ category }}
+tags: {{ tags }}
+author: "{{ author }}"
+description: "{{ description }}"
+canonical_url: "{{ canonical_url }}"
+---
+
+> {{ hook }}
+
+{{ body_md }}
+
+## Recommended Gear
+{% for p in products %}
+- [{{ p.name }}]({{ p.url }})
+{% endfor %}
+
+---
+
+**{{ cta_text }}** → [{{ cta_url }}]({{ cta_url }})
+
+*{{ affiliate_disclaimer }}*

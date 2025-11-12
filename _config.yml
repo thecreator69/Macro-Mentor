@@ -1,0 +1,8 @@
+title: Macro Mentor
+description: Evidence-based fitness, macros, and 1-hour workouts for busy students.
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
